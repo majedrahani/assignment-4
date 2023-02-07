@@ -8,21 +8,29 @@
 // Output: 7.5
 
 // Input: 50
-// Output: 65
+// Output: 75
 
 // Input: -33
 // Output: -25.5
 
+// problem -1
 function mindGame ( number){
+
     const multiplicationOfNumber = number * 3;
     const sumOfNumber = multiplicationOfNumber + 10;
     const devidedOfNumber = sumOfNumber / 2;
     const minusOfNumber = devidedOfNumber - 5;
 
+    if(typeof number === 'string' || number.length == 0){
+        return "Please provide valid input"
+    }
     return minusOfNumber;
 
 }
 const input = 33;
 const output = mindGame(input);
 console.log(output)
+
+// description,
+// First of all i have created a function, that called number. and i took a input using number. then normally part by prat i use multiplication, sume, devide and minus. than i have used if condition to find out invalid input.
 

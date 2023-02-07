@@ -12,7 +12,12 @@
 // Input: ‘chatgpt’
 // Output: odd
 
+// problem-2
 function evenOdd (string){
+
+    if(typeof string != 'string' || string.length == 0){
+        return "Please provide valid input"
+    }
 
     if( string.length % 2 === 0){
         return 'even'
@@ -24,3 +29,6 @@ function evenOdd (string){
 const input = 'chatgpt';
 const output = evenOdd ( input);
 console.log( output)
+
+// description,
+// First of all normally i have created a function. than i have used tow if condition. first condition for find out invalid output; and second conditon for select even, odd. and there i have used a simple logic. 

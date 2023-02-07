@@ -22,12 +22,17 @@
 // Input: 100, 5, 1
 // Output: 303
 
+// problem-5
 function gemsToDiamond (friend1, friend2, friend3) {
     const friend1diamond = friend1 * 21;
     const friend2diamond = friend2 * 32;
     const friend3diamond = friend3 * 43;
 
     const totaldiamond = friend1diamond + friend2diamond + friend3diamond;
+
+    if(typeof friend1 === 'string' || typeof friend2 === 'string' || typeof friend3 === 'string'){
+        return "Please provide valid input"
+    }
 
     if (totaldiamond >= 1000*2){
         return totaldiamond - 2000;
@@ -36,9 +41,11 @@ function gemsToDiamond (friend1, friend2, friend3) {
     }
 
 }
-const friend1Gems = 100;
-const friend2Gems = 5;
-const friend3Gems = 1;
-const output = gemsToDiamond(friend1Gems, friend2Gems, friend3Gems);
-console.log(output);
+// const friend1Gems = 100;
+// const friend2Gems = 5;
+// const friend3Gems = 1;
+// const output = gemsToDiamond(friend1Gems, friend2Gems, friend3Gems);
+// console.log(output);
 
+// description,
+// First of all i have created a function , than took three peramiter, there took input gems of three friends. and multiply gems by three fixed number. then find out sum of oll diamond. then i declare tow condition. first condition for invalid input. and second conditon for find out the solution of this problem;

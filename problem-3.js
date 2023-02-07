@@ -12,7 +12,13 @@
 // Input: 15
 // Output: 30
 
+// problem-3
 function isLGSeven (number){
+    
+    if(typeof number === 'string' || number.length == 0){
+        return "Please provide valid input"
+    }
+
     let element = number-7;
     if( element < 7){
         return element;
@@ -23,3 +29,6 @@ function isLGSeven (number){
 const input = 15;
 const output = isLGSeven( input );
 console.log( output );
+
+// description,
+// Here also first of all i have created a function. then i use a if condition for find out invalid input. than i do minus 7 from number peramiter. than i took another if condition. and than i return number peramiter multiply by 2;

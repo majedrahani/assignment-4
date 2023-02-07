@@ -16,6 +16,7 @@
 // Input: [ -4, -9, -5, -33, -55 ]
 // Output: 5
 
+// problem-4
 let numbers = [ -4, -9, -5, -33, -55 ];
 
 function findingBadData( array ) {
@@ -23,6 +24,11 @@ function findingBadData( array ) {
 let count = 0;
     for( let i = 0; i < array.length; i++){
         const element = array[i];
+
+        if(typeof array === 'string' || array.length == 0){
+            return "Please provide valid input"
+        }
+
         if(element <= -1){
             count = count +1;
         }
@@ -32,5 +38,9 @@ let count = 0;
 
 }
 
-const totalBadData = findingBadData(numbers);
-console.log ( totalBadData)
+// const totalBadData = findingBadData(numbers);
+// console.log ( totalBadData)
+
+
+// description,
+// First of all i have declared an array. than created a function. there took a peramiter. and under the perametar of the function i put tha array. than i took a for loop. using the loop i get index of array. and than i took tow if condition. first condition for find out invalid numbet. and second condition for find and count nagativ data.
